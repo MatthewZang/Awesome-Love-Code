@@ -52,7 +52,7 @@ new THREE.OBJLoader().load(
 
     // 基础网格材质
     heart.material = new THREE.MeshBasicMaterial({
-      color: new THREE.Color("rgb(0,0,0)"),
+      // color: new THREE.Color("rgb(0,0,0)"),
     });
     originHeart = Array.from(heart.geometry.attributes.position.array);
     // 用于在网格表面上采样加权随机点的实用程序类。
@@ -198,3 +198,4 @@ function onWindowResize() {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 }
+
